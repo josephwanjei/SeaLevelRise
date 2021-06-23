@@ -13,6 +13,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 library(tidyverse)
 library(ggthemes)
+library(knitr)
+library(rmarkdown)
+library(gt)
+library(gganimate)
+library(gifski)
+library(png)
+library(ggpubr)
 ```
 
 ```{r data}
@@ -25,15 +32,25 @@ raw_data <- read_csv("csiro_alt_gmsl_mo_2015.csv", col_types = cols(
 
 ```
 ```{r Sea-Level}
-raw_data %>%
-  ggplot(mapping = aes(x = Time, y = GMSL)) +
-  geom_line() +
-  geom_smooth(method = "lm", formula = y ~ x, se = TRUE) +
-  theme_economist() +
-  labs(x = "Years", y = "Sea Level (mm)",
-       title = "Change in Sea Levels from 1993 to 2015",
-       subtitle = "Rise In Sea Levels Indicate Graduale Warming of Earths Climate",
-       caption = "Source: NOAA (2015)")
+read_rds("Sea-Level-Animation.rds")
 ```
 
+The increase in Sea level is relatively constant
+
+```{r}
+read_rds("Sea-Level-Still.rds")
+```
+
+The value of R is 0.99 which correlates with the line graphs data. However, that can be due to other factors such as land rising (look at "About" for more info). This gradual increase is mainly speculated to be due to climate change.
+
+```{r table-1, layout = "l-body-outset"}
+raw_data
+```
+
+```{r table-4}
+gt(raw_data, rownames_to_stub = TRUE) %>%
+  tab_header(title = md("**Global Absolute Sea Level**"), subtitle = "Sea Level Increases As Time Progresses") %>%
+  tab_source_note("Source: NOAA (2015)")
+```
+https://datahub.io/core/sea-level-rise#data
 
