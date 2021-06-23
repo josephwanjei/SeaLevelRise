@@ -1,5 +1,5 @@
 ---
-title: "About this site"
+title: "The Graph Explores How Sea Level Changes Through Time"
 description: |
   Some additional details about the website
 ---
@@ -8,3 +8,15 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## About Me
+## My name is **Joseph**, I go to White Oaks Secondary School
+## About the Project
+## This is for the final project
+### Goals
+*to create an interactive graph
+  +allow the mouse to view the date when it goes on the line graph
+*to have multiple graphs that effectively depict the data
+  +have four graphs, one which depicts the entire data set and 3 which depicts different time periods
+"This is data science"
+  ~ Preceptor
+(["Kane’s Free High School Data Science Bootcamp"])

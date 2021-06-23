@@ -1,7 +1,7 @@
 ---
-title: "Change in Sea level from , gh_pages = TRUE"
+title: "Change in Sea level"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Examination of Climate Changes Impact On Sea Level
 site: distill::distill_website
 ---
 
@@ -11,5 +11,29 @@ knitr::opts_chunk$set(echo = FALSE)
 # Learn more about creating websites with Distill at:
 # https://rstudio.github.io/distill/website.html
 
+library(tidyverse)
+library(ggthemes)
 ```
+
+```{r data}
+raw_data <- read_csv("csiro_alt_gmsl_mo_2015.csv", col_types = cols(
+  Time = col_date(format = ""),
+  GMSL = col_double()
+)) %>%
+  as_tibble()
+
+
+```
+```{r Sea-Level}
+raw_data %>%
+  ggplot(mapping = aes(x = Time, y = GMSL)) +
+  geom_line() +
+  geom_smooth(method = "lm", formula = y ~ x, se = TRUE) +
+  theme_economist() +
+  labs(x = "Years", y = "Sea Level (mm)",
+       title = "Change in Sea Levels from 1993 to 2015",
+       subtitle = "Rise In Sea Levels Indicate Graduale Warming of Earths Climate",
+       caption = "Source: NOAA (2015)")
+```
+
 

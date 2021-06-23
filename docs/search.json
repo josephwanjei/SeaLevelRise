@@ -1,12 +1,62 @@
 {
   "articles": [
     {
-      "path": "index.html",
-      "title": "Change in Sea level from , gh_pages = TRUE",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "path": "about.html",
+      "title": "The Graph Explores How Sea Level Changes Through Time",
+      "description": "Some additional details about the website",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-22T18:44:47-04:00"
+      "contents": "\r\nAbout Me\r\nMy name is Joseph, I go to White Oaks Secondary School\r\nAbout the Project\r\nThis is for the final project\r\nGoals\r\nto create an interactive graph +allow the mouse to view the date when it goes on the line graph to have multiple graphs that effectively depict the data +have four graphs, one which depicts the entire data set and 3 which depicts different time periods “This is data science” ~ Preceptor ([“Kane’s Free High School Data Science Bootcamp”])\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-22T21:37:12-04:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Change in Sea level",
+      "description": "Examination of Climate Changes Impact On Sea Level\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-22T21:37:16-04:00"
+    },
+    {
+      "path": "Sea_Level_Rise.html",
+      "title": "Untitled",
+      "description": "A new article created using the Distill format.\n",
+      "author": [
+        {
+          "name": "Nora Jones",
+          "url": "https://example.com/norajones"
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-22T21:37:17-04:00"
+    },
+    {
+      "path": "source_A.html",
+      "title": "Source B",
+      "description": "Detailed notes for Source B.\n",
+      "author": [
+        {
+          "name": "Joseph  https://example.com/spacelysprokets",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-22T21:37:18-04:00"
+    },
+    {
+      "path": "source_B.html",
+      "title": "Source B",
+      "description": "Detailed notes for Source B.\n",
+      "author": [
+        {
+          "name": "Joseph  https://example.com/spacelysprokets",
+          "url": {}
+        }
+      ],
+      "date": "`r Sys.Date()`",
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-22T21:37:18-04:00"
     }
   ],
   "collections": []
