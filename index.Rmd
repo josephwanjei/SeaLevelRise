@@ -35,7 +35,7 @@ raw_data <- read_csv("csiro_alt_gmsl_mo_2015.csv", col_types = cols(
 read_rds("Sea-Level-Animation.rds")
 ```
 
-The increase in Sea level is relatively constant
+The increase in Sea level is relatively constant.
 
 ```{r}
 read_rds("Sea-Level-Still.rds")
