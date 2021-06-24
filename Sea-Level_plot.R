@@ -18,7 +18,7 @@ Sea_Level <- raw_data %>%
   labs(x = "Years", y = "Sea Level (mm)",
        title = "Change in Sea Levels from 1993 to 2015",
        subtitle = "Rise In Sea Levels Indicate Gradual Warming of Earths Climate",
-       caption = "Source: NOAA (2015)") +
+       caption = "Source EPA (2015)") +
   transition_reveal(Time)+
   view_follow(fixed_y = TRUE)
 Sea_Level
