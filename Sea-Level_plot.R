@@ -9,6 +9,7 @@ raw_data <- read_csv("csiro_alt_gmsl_mo_2015.csv", col_types = cols(
   GMSL = col_double()
 )) %>%
   as_tibble()
+write_rds(raw_data, "raw_data")
 
 Sea_Level <- raw_data %>%
   ggplot(mapping = aes(x = Time, y = GMSL)) +

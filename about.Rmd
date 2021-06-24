@@ -11,4 +11,4 @@ knitr::opts_chunk$set(echo = FALSE)
 ## About Me
 ## My name is **Joseph**, I go to White Oaks Secondary School
 ## About the Project
-## This is for the final project
+## This is for the final project, it is about climate changes impact on global sea levels

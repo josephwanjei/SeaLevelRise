@@ -1,9 +1,9 @@
 ---
 title: "Source B"
 description: |
-  CSIRO was one of the sources that the NOAA used.
+  CSIRO was one of the sources used.
 author:
-  - name:  EPA (United States Environmental Protection Agency)
+  - name:  CSIRO (Commonwealth Scientific and Industrial Research Organization)
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
