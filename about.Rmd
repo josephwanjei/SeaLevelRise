@@ -12,5 +12,13 @@ knitr::opts_chunk$set(echo = FALSE)
 ## My name is **Joseph**, I go to White Oaks Secondary School
 ## About the Project
 ## This is for the final project, it is about climate changes impact on global sea levels
+### Goals
+* to create an interactive graph
+  + allow the mouse to view the date when it goes on the line graph
+* to have multiple graphs that effectively depict the data
+  + have four graphs, one which depicts the entire data set and 3 which depicts different time periods
+"This is data science"
+  ~ Preceptor
+(["Kane’s Free High School Data Science Bootcamp"])
 
 github account: https://github.com/josephwanjei
